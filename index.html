@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/currency-converter.js"></script>
+</head>
+
+<body class="body">
+    <header class="header">Kalkulator walut</header>
+    <form class="js-form">
+        <fieldset class="fieldset">
+            <legend class="legend">Wybierz walute i wprowadź wartość</legend>
+            <h1 class="subheader">Waluty:</h1>
+            <ul class="list">
+                <li>
+                    <label>Euro(4.42)
+                        <input class="js-euro" type="radio" value="Euro" name="radio" checked>
+                    </label>
+                </li>
+                <li>
+                    <label>Dolar(3.97)
+                        <input class="js-dolar" type="radio" value="Dolar" name="radio">
+                    </label>
+                </li>
+                <li>
+                    <label>Funt(5.15)
+                        <input class="js-funt" type="radio" value="Funt" name="radio">
+                    </label>
+                </li>
+            </ul>
+            <p>
+                Kwota <input class="js-amount input" type="number" step="any" max="1000000000">
+            </p>
+            <p>
+                <button class="button">Przelicz na PLN</button>
+            </p>
+            <p>
+                Wynik:<strong class="js-result"></strong>PLN
+            </p>
+        </fieldset>
+    </form>
+    <footer>Kursy walut z dnia 27.07.2023</footer>
+</body>
+
+</html>
