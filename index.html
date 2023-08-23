@@ -14,16 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <script defer src="js/currency-converter.js"></script>
 </head>
 
 <body class="body">
     <header class="header">Kalkulator walut</header>
-    <form class="js-form">
-        <fieldset class="fieldset">
-            <legend class="legend">Wybierz walute i wprowadź wartość</legend>
-            <h1 class="subheader">Waluty:</h1>
-            <ul class="list">
+    <form class="js-form form">
+        <fieldset class="form_fieldset">
+            <legend class="form_legend">Wybierz walute i wprowadź wartość</legend>
+            <h1 class>Waluty:</h1>
+            <ul class="form_list">
                 <li>
                     <label>Euro(4.42)
                         <input class="js-euro" type="radio" value="Euro" name="radio" checked>
@@ -41,17 +42,17 @@
                 </li>
             </ul>
             <p>
-                Kwota <input class="js-amount input" type="number" step="any" max="1000000000">
+                Kwota <input class="js-amount form_input" type="number" step="any" max="1000000000">
             </p>
             <p>
-                <button class="button">Przelicz na PLN</button>
+                <button class="form_button">Przelicz na PLN</button>
             </p>
-            <p>
+            <p class="form_result">
                 Wynik:<strong class="js-result"></strong>PLN
             </p>
         </fieldset>
     </form>
-    <footer>Kursy walut z dnia 27.07.2023</footer>
+    <footer class="form_footer">Kursy walut z dnia 27.07.2023</footer>
 </body>
 
 </html>

@@ -15,6 +15,9 @@ html {
     max-width: 750px;
     text-align: center;
     background-color: aliceblue;
+    background-image: url("../images/background-image.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .header {
@@ -23,35 +26,6 @@ html {
     background-color: #fce9a638;
     border: 5px solid;
     border-radius: 35% 20%;
-    border-style:none;
+    border-style: none;
     padding: 40px;
-}
-
-.legend {
-    text-align: left;
-}
-
-.button {
-    cursor: pointer;
-    border: 2px solid red;
-    padding: 10px 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 20px;
-}
-
-.list {
-    list-style-type: none;
-    padding-left: 0px;
-    font-size: large;
-    line-height: 1.5;
-}
-.fieldset{
-    border: 10px ridge;
-    background-color:#fce9a638;
-}
-
-.input{
-    padding: 10px;
 }

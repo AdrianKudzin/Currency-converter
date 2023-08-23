@@ -1,0 +1,40 @@
+.form_legend {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.form_button {
+    cursor: pointer;
+    border: 2px solid red;
+    padding: 10px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.form_list {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.form_fieldset {
+    border: 5px solid;
+    background-color: rgba(236, 243, 244, 0.695);
+}
+
+.form_input {
+    padding: 10px;
+}
+
+.form_footer {
+    color: aliceblue;
+    font-size: 17px;
+}
+.form_result {
+    font-size: x-large;
+    font-weight: 700;
+}
