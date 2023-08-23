@@ -18,14 +18,17 @@ html {
     background-image: url("../images/background-image.jpg");
     background-size: cover;
     background-position: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 .header {
+    max-width: 400px;
+    margin: auto;
     font-weight: bold;
     font-size: 35px;
-    background-color: #fce9a638;
+    background-color: rgb(143, 201, 209);
     border: 5px solid;
-    border-radius: 35% 20%;
-    border-style: none;
-    padding: 40px;
+    padding: 20px;
 }

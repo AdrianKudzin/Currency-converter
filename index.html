@@ -21,10 +21,10 @@
 <body class="body">
     <header class="header">Kalkulator walut</header>
     <form class="js-form form">
-        <fieldset class="form_fieldset">
-            <legend class="form_legend">Wybierz walute i wprowadź wartość</legend>
-            <h1 class>Waluty:</h1>
-            <ul class="form_list">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Wybierz walute i wprowadź wartość</legend>
+            <h1>Waluty:</h1>
+            <ul class="form__list">
                 <li>
                     <label>Euro(4.42)
                         <input class="js-euro" type="radio" value="Euro" name="radio" checked>
@@ -42,17 +42,17 @@
                 </li>
             </ul>
             <p>
-                Kwota <input class="js-amount form_input" type="number" step="any" max="1000000000">
+                Kwota <input class="js-amount form__input" type="number" step="any" max="1000000000">
             </p>
             <p>
-                <button class="form_button">Przelicz na PLN</button>
+                <button class="form__button">Przelicz na PLN</button>
             </p>
-            <p class="form_result">
+            <p class="form__result">
                 Wynik:<strong class="js-result"></strong>PLN
             </p>
         </fieldset>
     </form>
-    <footer class="form_footer">Kursy walut z dnia 27.07.2023</footer>
+    <footer class="form__footer">Kursy walut z dnia 27.07.2023</footer>
 </body>
 
 </html>
