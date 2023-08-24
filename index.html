@@ -20,24 +20,24 @@
 
 <body class="body">
     <header class="header">Kalkulator walut</header>
-    <form class="js-form form">
+    <form class="js-form">
         <fieldset class="form__fieldset">
             <legend class="form__legend">Wybierz walute i wprowadź wartość</legend>
             <h1>Waluty:</h1>
             <ul class="form__list">
                 <li>
                     <label>Euro(4.42)
-                        <input class="js-euro" type="radio" value="Euro" name="radio" checked>
+                        <input class="js-currency" type="radio" value="EUR" name="radio" checked>
                     </label>
                 </li>
                 <li>
                     <label>Dolar(3.97)
-                        <input class="js-dolar" type="radio" value="Dolar" name="radio">
+                        <input class="js-currency" type="radio" value="USD" name="radio">
                     </label>
                 </li>
                 <li>
                     <label>Funt(5.15)
-                        <input class="js-funt" type="radio" value="Funt" name="radio">
+                        <input class="js-currency" type="radio" value="GBP" name="radio">
                     </label>
                 </li>
             </ul>
@@ -48,7 +48,7 @@
                 <button class="form__button">Przelicz na PLN</button>
             </p>
             <p>
-                Wynik:<strong class="js-result"></strong>PLN
+                Wynik:<strong class="js-result"></strong>
             </p>
         </fieldset>
     </form>

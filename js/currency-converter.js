@@ -1,24 +1,30 @@
-let form = document.querySelector(".js-form");
-let result = document.querySelector(".js-result");
-let amount = document.querySelector(".js-amount");
-let euro = document.querySelector(".js-euro");
-let dolar = document.querySelector(".js-dolar");
-let funt = document.querySelector(".js-funt");
+let formElement = document.querySelector(".js-form");
+let resultElement = document.querySelector(".js-result");
+let amountElement = document.querySelector(".js-amount");
 
-let exchangeRateValue = 4.42;
 
-form.addEventListener("submit", () => {
-    if (euro.checked) {
-        exchangeRateValue = 4.42;
-    } else if (dolar.checked) {
-        exchangeRateValue = 3.97;
-    } else if (funt.checked) {
-        exchangeRateValue = 5.15;
-    }
-});
+let rateEUR = 4.42;
+let rateUSD = 3.97;
+let rateGBP = 5.15;
 
-form.addEventListener("submit", (event) => {
+formElement.addEventListener("submit", (event) => {
     event.preventDefault();
-    result.value = exchangeRateValue * amount.value;
-    result.innerText = result.value.toFixed(2);
+
+    let amount = +amountElement.value;
+    let currency = document.querySelector(".js-currency:checked").value;
+    let result;
+
+    switch (currency) {
+        case "EUR":
+            result = amount * rateEUR;
+            break;
+        case "USD":
+            result = amount * rateUSD;
+            break;
+        case "GBP":
+            result = amount * rateGBP;
+            break;
+    }
+
+    resultElement.innerHTML = `${amount.toFixed(2)} ${currency} = ${result.toFixed(2)} PLN`;
 });
